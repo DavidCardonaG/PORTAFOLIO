@@ -52,8 +52,8 @@
                 <h2 class="p-card">FIXMOVIE</h2>
                 <p class="p-card"> Es una de las plataformas de series y peliculas más famosas del mundo</p>
                     <div class="btns-card">
-                       <button class="btn-1">Ver proyecto completo</button>
-                        <button class="btn-2">Ver código</button>
+                       <button id="btn1" class="btn-1">Ver proyecto completo</button>
+                        <button id="btn2" class="btn-2">Ver código</button>
                      </div>
              </div>
     </div>
@@ -65,8 +65,8 @@
                     <h2 class="p-card2">Principe Fresco</h2>
                     <p class="p-card2">La serie esta protagonizada por will smith como una versión ficticia de el</p>
                     <div class="btns-card">
-                        <button class="btn-1">Ver proyecto completo</button>
-                         <button class="btn-2">Ver código</button>
+                        <button id="btn3" class="btn-1">Ver proyecto completo</button>
+                         <button id="btn4" class="btn-2">Ver código</button>
                       </div>
                 </div>
             </div>
@@ -78,14 +78,14 @@
                     <h2 class="p-card3">TECH.SHOP</h2>
                     <p class="p-card3">Es una tienda online con los más grandes estandares de calidad en sus productos</p>
                     <div class="btns-card">
-                        <button class="btn-1">Ver proyecto completo</button>
-                         <button class="btn-2">Ver código</button>
+                        <button id="btn5" class="btn-1">Ver proyecto completo</button>
+                         <button id="btn6" class="btn-2">Ver código</button>
                       </div>
                 </div>
             </div>
         </div>
     </div>
-    <button class="products">Ver más productos  <i class="fas fa-arrow-right"></i></button>
+    <button id="btn7" class="products">Ver más productos  <i class="fas fa-arrow-right"></i></button>
 </section>
 
 
@@ -147,7 +147,8 @@
 </section>
 <img class="image-fond" src="https://res.cloudinary.com/cardonagarciadavid11/image/upload/v1631019455/img_uk9wtz.png">
 
-<section class="formulario" id="contact"> 
+<section  class="formulario" id="contact"> 
+    <form id="form" action="https://formspree.io/f/mwkaaybe" method="POST" >
     <div class="card-formu"> 
         <div class="card-inputs">
             <h1 class="t-input">CONTACTO</h1>
@@ -161,12 +162,15 @@
                <div class="input-textarea">
                     <textarea class="input" name="mensaje" placeholder="Mensaje"></textarea>
                </div>
-               <button class="input-btn">Enviar Mensaje</button>
+               <button type="submit" class="input-btn">Enviar Mensaje</button>
         </div>
     </div>
+</form>
+<a href="mailto:davidcardonagarcia67@gmail.com" id="mailto"></a>
 </section>
     <script src="./app/index.js"></script>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 <section class="footer">
     <h1 class="logo-footer">LOGO</h1>
