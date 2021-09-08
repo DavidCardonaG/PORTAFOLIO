@@ -3173,21 +3173,9 @@ eval("/**\n * Copyright (c) 2014-present, Facebook, Inc.\n *\n * This source cod
 /*!**************************!*\
   !*** ./src/app/index.js ***!
   \**************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (() => {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/app/style.css\");\n\n\n//# sourceURL=webpack://portafolio/./src/app/index.js?");
-
-/***/ }),
-
-/***/ "./src/app/style.css":
-/*!***************************!*\
-  !*** ./src/app/style.css ***!
-  \***************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://portafolio/./src/app/style.css?");
+eval("function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }\n\nfunction _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err); } _next(undefined); }); }; }\n\nvar btn = document.querySelector('#btn1');\nbtn.addEventListener('click', function () {\n  window.location = \"https://davidcardonag.github.io/FIXMOVIE-/\";\n});\nvar btn2 = document.querySelector('#btn2');\nbtn2.addEventListener('click', function () {\n  window.location = \"https://github.com/DavidCardonaG/FIXMOVIE-\";\n});\nvar btn3 = document.querySelector('#btn3');\nbtn3.addEventListener('click', function () {\n  window.location = \"https://davidcardonag.github.io/WEB-SHOP/\";\n});\nvar btn4 = document.querySelector('#btn4');\nbtn4.addEventListener('click', function () {\n  window.location = \"https://github.com/DavidCardonaG/WEB-SHOP\";\n});\nvar btn5 = document.querySelector('#btn5');\nbtn5.addEventListener('click', function () {\n  window.location = \"https://davidcardonag.github.io/ECCOMERCE/\";\n});\nvar btn6 = document.querySelector('#btn6');\nbtn6.addEventListener('click', function () {\n  window.location = \"https://github.com/DavidCardonaG/ECCOMERCE\";\n});\nvar btn7 = document.querySelector('#btn7');\nbtn7.addEventListener('click', function () {\n  window.location = \"https://github.com/DavidCardonaG?tab=repositories\";\n});\nvar formulario = document.getElementById('form');\nvar mailto = document.getElementById('mailto');\nformulario.addEventListener('submit', SubmitHandler);\n\nfunction SubmitHandler(_x) {\n  return _SubmitHandler.apply(this, arguments);\n}\n\nfunction _SubmitHandler() {\n  _SubmitHandler = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(e) {\n    var form, resp;\n    return regeneratorRuntime.wrap(function _callee$(_context) {\n      while (1) {\n        switch (_context.prev = _context.next) {\n          case 0:\n            e.preventDefault();\n            form = new FormData(this);\n            _context.next = 4;\n            return fetch(this.action, {\n              method: 'POST',\n              body: form,\n              headers: {\n                'Accept': 'application/json'\n              }\n            });\n\n          case 4:\n            resp = _context.sent;\n\n            if (resp.ok) {\n              this.reset();\n              Swal.fire({\n                position: 'top-center',\n                icon: 'success',\n                title: 'El Mensaje ha sido enviado',\n                showConfirmButton: false,\n                timer: 2000\n              });\n            }\n\n          case 6:\n          case \"end\":\n            return _context.stop();\n        }\n      }\n    }, _callee, this);\n  }));\n  return _SubmitHandler.apply(this, arguments);\n}\n\n//# sourceURL=webpack://portafolio/./src/app/index.js?");
 
 /***/ })
 
@@ -3216,18 +3204,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-/******/ 	
-/************************************************************************/
-/******/ 	/* webpack/runtime/make namespace object */
-/******/ 	(() => {
-/******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = (exports) => {
-/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 			}
-/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 		};
-/******/ 	})();
 /******/ 	
 /************************************************************************/
 /******/ 	
